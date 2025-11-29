@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        dark: '#0f172a',
+                        card: '#1e293b',
+                        accent: '#38bdf8',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #000000;
+            background-image: radial-gradient(#1a1a1a 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        .link-card {
+            transition: all 0.3s ease;
+        }
+        .link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px -10px rgba(56, 189, 248, 0.5);
+            border-color: #38bdf8;
+        }
+    </style>
+</head>
+<body class="text-gray-300 font-sans min-h-screen flex flex-col items-center py-10 px-4">
+
+<header class="w-full max-w-4xl mb-10 flex justify-between items-center">
+    <div>
+        <h1 class="text-3xl font-bold text-white tracking-tight">REN's Dashboard</h1>
+        <p class="text-sm text-gray-500 mt-1">Daily Tools & Favorites</p>
+    </div>
+    <div class="text-right">
+        <span class="bg-gray-800 text-xs py-1 px-3 rounded-full border border-gray-700">Private Space</span>
+    </div>
+</header>
+
+<main class="w-full max-w-4xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+    <a href="https://chat.openai.com/" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 group">
+        <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 bg-green-900/30 rounded-lg flex items-center justify-center text-green-400 group-hover:text-green-300">
+                <i class="fa-solid fa-robot text-xl"></i>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square text-gray-600 group-hover:text-white transition-colors"></i>
+        </div>
+        <h2 class="text-xl font-bold text-white mb-1">ChatGPT</h2>
+        <p class="text-sm text-gray-500">AI Assistant</p>
+    </a>
+
+    <a href="https://www.youtube.com/" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 group">
+        <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 bg-red-900/30 rounded-lg flex items-center justify-center text-red-500 group-hover:text-red-400">
+                <i class="fa-brands fa-youtube text-xl"></i>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square text-gray-600 group-hover:text-white transition-colors"></i>
+        </div>
+        <h2 class="text-xl font-bold text-white mb-1">YouTube</h2>
+        <p class="text-sm text-gray-500">Video & Music</p>
+    </a>
+
+    <a href="https://github.com/" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 group">
+        <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 bg-gray-700/30 rounded-lg flex items-center justify-center text-white group-hover:text-gray-200">
+                <i class="fa-brands fa-github text-xl"></i>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square text-gray-600 group-hover:text-white transition-colors"></i>
+        </div>
+        <h2 class="text-xl font-bold text-white mb-1">GitHub</h2>
+        <p class="text-sm text-gray-500">Code Repository</p>
+    </a>
+
+    <a href="https://mail.google.com/" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 group">
+        <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 bg-blue-900/30 rounded-lg flex items-center justify-center text-blue-400 group-hover:text-blue-300">
+                <i class="fa-solid fa-envelope text-xl"></i>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square text-gray-600 group-hover:text-white transition-colors"></i>
+        </div>
+        <h2 class="text-xl font-bold text-white mb-1">Gmail</h2>
+        <p class="text-sm text-gray-500">Check Inbox</p>
+    </a>
+
+    <a href="https://twitter.com/" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 group">
+        <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center text-white">
+                <i class="fa-brands fa-x-twitter text-xl"></i>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square text-gray-600 group-hover:text-white transition-colors"></i>
+        </div>
+        <h2 class="text-xl font-bold text-white mb-1">X</h2>
+        <p class="text-sm text-gray-500">Social Media</p>
+    </a>
+
+    <a href="https://www.google.com/" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 group">
+        <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 bg-yellow-900/30 rounded-lg flex items-center justify-center text-yellow-400 group-hover:text-yellow-300">
+                <i class="fa-brands fa-google text-xl"></i>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square text-gray-600 group-hover:text-white transition-colors"></i>
+        </div>
+        <h2 class="text-xl font-bold text-white mb-1">Google</h2>
+        <p class="text-sm text-gray-500">Search</p>
+    </a>
+
+    <a href="https://www.google.com/search?q=%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%AA%E3%83%BC%E3%82%B0&sca_esv=fb3147f266a54277&rlz=1C1QABZ_jaJP925JP945&ei=jh8raciFEufT2roP2NG1oQI&ved=0ahUKEwjIhISS5JeRAxXnqVYBHdhoLSQQ4dUDCBE&uact=5&oq=%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%AA%E3%83%BC%E3%82%B0&gs_lp=Egxnd3Mtd2l6LXNlcnAiFeODl-ODrOODn-OCouODquODvOOCsDIFEAAYgAQyCxAAGIAEGLEDGIMBMgsQABiABBixAxiDATILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMggQABiABBixAzIIEAAYgAQYsQMyCxAAGIAEGLEDGIMBMgsQABiABBixAxiDATIOEAAYgAQYsQMYgwEYigVIrzBQ1QZYui1wBngBkAECmAGXAqABqgqqAQUwLjUuMrgBA8gBAPgBAZgCCaAC3AWoAgrCAgoQABiwAxjWBBhHwgIKEAAYgAQYsQMYBMICDRAAGIAEGLEDGIMBGATCAgcQABiABBgEwgIgEAAYgAQYtAIY1AMY5QIY5wYYtwMYigUY6gIYigPYAQHCAhAQABiABBixAxiDARgEGIoFwgIKEAAYgAQYQxiKBcICEBAAGIAEGLEDGEMYgwEYigWYAxLiAwUSATEgQPEF1GXMQASDhmKIBgGQBgq6BgQIARgHkgcFNi4xLjKgB5wasgcFMC4xLjK4B_sEwgcHMi0xLjUuM8gHhwE&sclient=gws-wiz-serp#wptab=si:AMgyJEt5t4vh4BTDGNRc9eoUcUrmfcvMYzufJ68Rq3PlbQtYfPCifPjjSTG3or6l6ixS2NmNBb_uzUXj37OWVd0ltWWKyv33iF1yZy_Zu5Rk74D7gqKqIKOw2hB6L_zc2j5cDB0IIjs9DOeOu8y4-uUaFS8mJByZlyIx6zSv34_M6jnElUGuDK8UbshAf9kzFXCPV4wMM4bq" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 group">
+        <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 bg-indigo-900/30 rounded-lg flex items-center justify-center text-indigo-400 group-hover:text-indigo-300">
+                <i class="fa-solid fa-futbol text-xl"></i>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square text-gray-600 group-hover:text-white transition-colors"></i>
+        </div>
+        <h2 class="text-xl font-bold text-white mb-1">Premier League</h2>
+        <p class="text-sm text-gray-500">Scores & Schedule</p>
+    </a>
+
+    <a href="https://stopwatch.onl.jp/" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 group">
+        <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 bg-orange-900/30 rounded-lg flex items-center justify-center text-orange-400 group-hover:text-orange-300">
+                <i class="fa-solid fa-stopwatch text-xl"></i>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square text-gray-600 group-hover:text-white transition-colors"></i>
+        </div>
+        <h2 class="text-xl font-bold text-white mb-1">Stopwatch</h2>
+        <p class="text-sm text-gray-500">Timer Tool</p>
+    </a>
+
+</main>
+
+<footer class="mt-20 text-gray-600 text-sm">
+    &copy; 2024 Rennya Watanabe Portfolio
+</footer>
+
+</body>
+</html>
