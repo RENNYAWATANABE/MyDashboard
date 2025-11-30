@@ -54,6 +54,19 @@
 
 <main class="w-full max-w-4xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
+    <!-- Premier League を一番上に配置 -->
+    <a href="https://www.google.com/search?q=%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%AA%E3%83%BC%E3%82%B0" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 group">
+        <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 bg-indigo-900/30 rounded-lg flex items-center justify-center text-indigo-400 group-hover:text-indigo-300">
+                <i class="fa-solid fa-futbol text-xl"></i>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square text-gray-600 group-hover:text-white transition-colors"></i>
+        </div>
+        <h2 class="text-xl font-bold text-white mb-1">Premier League</h2>
+        <p class="text-sm text-gray-500">Scores & Schedule</p>
+    </a>
+
+    <!-- ChatGPT -->
     <a href="https://chat.openai.com/" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 group">
         <div class="flex items-center justify-between mb-4">
             <div class="w-12 h-12 bg-green-900/30 rounded-lg flex items-center justify-center text-green-400 group-hover:text-green-300">
@@ -65,6 +78,7 @@
         <p class="text-sm text-gray-500">AI Assistant</p>
     </a>
 
+    <!-- YouTube -->
     <a href="https://www.youtube.com/" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 group">
         <div class="flex items-center justify-between mb-4">
             <div class="w-12 h-12 bg-red-900/30 rounded-lg flex items-center justify-center text-red-500 group-hover:text-red-400">
@@ -76,6 +90,7 @@
         <p class="text-sm text-gray-500">Video & Music</p>
     </a>
 
+    <!-- GitHub -->
     <a href="https://github.com/" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 group">
         <div class="flex items-center justify-between mb-4">
             <div class="w-12 h-12 bg-gray-700/30 rounded-lg flex items-center justify-center text-white group-hover:text-gray-200">
@@ -87,9 +102,10 @@
         <p class="text-sm text-gray-500">Code Repository</p>
     </a>
 
+    <!-- Gmail -->
     <a href="https://mail.google.com/" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 group">
         <div class="flex items-center justify-between mb-4">
-            <div class="w-12 h-12 bg-blue-900/30 rounded-lg flex items-center justify-center text-blue-400 group-hover:text-blue-300">
+            <div class="w-12 h-12 bg-blue-900/30 rounded-lg flex items中心 justify-center text-blue-400 group-hover:text-blue-300">
                 <i class="fa-solid fa-envelope text-xl"></i>
             </div>
             <i class="fa-solid fa-arrow-up-right-from-square text-gray-600 group-hover:text-white transition-colors"></i>
@@ -98,6 +114,7 @@
         <p class="text-sm text-gray-500">Check Inbox</p>
     </a>
 
+    <!-- X (Twitter) -->
     <a href="https://twitter.com/" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 group">
         <div class="flex items-center justify-between mb-4">
             <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center text-white">
@@ -109,6 +126,7 @@
         <p class="text-sm text-gray-500">Social Media</p>
     </a>
 
+    <!-- Google -->
     <a href="https://www.google.com/" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 group">
         <div class="flex items-center justify-between mb-4">
             <div class="w-12 h-12 bg-yellow-900/30 rounded-lg flex items-center justify-center text-yellow-400 group-hover:text-yellow-300">
@@ -120,17 +138,31 @@
         <p class="text-sm text-gray-500">Search</p>
     </a>
 
-    <a href="https://www.google.com/search?q=%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%AA%E3%83%BC%E3%82%B0&sca_esv=fb3147f266a54277&rlz=1C1QABZ_jaJP925JP945&ei=jh8raciFEufT2roP2NG1oQI&ved=0ahUKEwjIhISS5JeRAxXnqVYBHdhoLSQQ4dUDCBE&uact=5&oq=%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%AA%E3%83%BC%E3%82%B0&gs_lp=Egxnd3Mtd2l6LXNlcnAiFeODl-ODrOODn-OCouODquODvOOCsDIFEAAYgAQyCxAAGIAEGLEDGIMBMgsQABiABBixAxiDATILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMggQABiABBixAzIIEAAYgAQYsQMyCxAAGIAEGLEDGIMBMgsQABiABBixAxiDATIOEAAYgAQYsQMYgwEYigVIrzBQ1QZYui1wBngBkAECmAGXAqABqgqqAQUwLjUuMrgBA8gBAPgBAZgCCaAC3AWoAgrCAgoQABiwAxjWBBhHwgIKEAAYgAQYsQMYBMICDRAAGIAEGLEDGIMBGATCAgcQABiABBgEwgIgEAAYgAQYtAIY1AMY5QIY5wYYtwMYigUY6gIYigPYAQHCAhAQABiABBixAxiDARgEGIoFwgIKEAAYgAQYQxiKBcICEBAAGIAEGLEDGEMYgwEYigWYAxLiAwUSATEgQPEF1GXMQASDhmKIBgGQBgq6BgQIARgHkgcFNi4xLjKgB5wasgcFMC4xLjK4B_sEwgcHMi0xLjUuM8gHhwE&sclient=gws-wiz-serp#wptab=si:AMgyJEt5t4vh4BTDGNRc9eoUcUrmfcvMYzufJ68Rq3PlbQtYfPCifPjjSTG3or6l6ixS2NmNBb_uzUXj37OWVd0ltWWKyv33iF1yZy_Zu5Rk74D7gqKqIKOw2hB6L_zc2j5cDB0IIjs9DOeOu8y4-uUaFS8mJByZlyIx6zSv34_M6jnElUGuDK8UbshAf9kzFXCPV4wMM4bq" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 group">
+    <!-- TimeTree -->
+    <a href="https://timetreeapp.com/calendars/dScMtU7aNrSc" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 group">
         <div class="flex items-center justify-between mb-4">
-            <div class="w-12 h-12 bg-indigo-900/30 rounded-lg flex items-center justify-center text-indigo-400 group-hover:text-indigo-300">
-                <i class="fa-solid fa-futbol text-xl"></i>
+            <div class="w-12 h-12 bg-teal-900/30 rounded-lg flex items-center justify-center text-teal-400 group-hover:text-teal-300">
+                <i class="fa-solid fa-calendar-days text-xl"></i>
             </div>
             <i class="fa-solid fa-arrow-up-right-from-square text-gray-600 group-hover:text-white transition-colors"></i>
         </div>
-        <h2 class="text-xl font-bold text-white mb-1">Premier League</h2>
-        <p class="text-sm text-gray-500">Scores & Schedule</p>
+        <h2 class="text-xl font-bold text-white mb-1">TimeTree</h2>
+        <p class="text-sm text-gray-500">Shared Calendar</p>
     </a>
 
+    <!-- Amazon -->
+    <a href="https://www.amazon.co.jp/" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 group">
+        <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 bg-amber-900/30 rounded-lg flex items-center justify-center text-amber-400 group-hover:text-amber-300">
+                <i class="fa-brands fa-amazon text-xl"></i>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square text-gray-600 group-hover:text-white transition-colors"></i>
+        </div>
+        <h2 class="text-xl font-bold text-white mb-1">Amazon</h2>
+        <p class="text-sm text-gray-500">Shopping</p>
+    </a>
+
+    <!-- Stopwatch -->
     <a href="https://stopwatch.onl.jp/" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 group">
         <div class="flex items-center justify-between mb-4">
             <div class="w-12 h-12 bg-orange-900/30 rounded-lg flex items-center justify-center text-orange-400 group-hover:text-orange-300">
