@@ -1,50 +1,51 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Dashboard</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REN's Dashboard</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
 
     <script>
         tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        dark: '#0f172a',
-                        card: '#1e293b',
-                        accent: '#38bdf8',
-                    }
-                }
-            }
-        }
+          theme: {
+            extend: {
+              fontFamily: {
+                sans: ['Inter', 'sans-serif'],
+              },
+              colors: {
+                dark: '#0f172a',
+                card: '#1e293b',
+                accent: '#38bdf8',
+              },
+            },
+          },
+        };
     </script>
     <style>
         body {
-            background-color: #000000;
-            background-image: radial-gradient(#1a1a1a 1px, transparent 1px);
-            background-size: 30px 30px;
+          background-color: #0f0f0f;
+          background-image: radial-gradient(#1a1a1a 1px, transparent 1px);
+          background-size: 24px 24px;
         }
         .link-card {
-            transition: all 0.3s ease;
+          transition: all 0.3s ease;
         }
         .link-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px -10px rgba(56, 189, 248, 0.5);
-            border-color: #38bdf8;
+          transform: translateY(-4px);
+          box-shadow: 0 8px 16px -6px rgba(56, 189, 248, 0.4);
+          border-color: #38bdf8;
         }
     </style>
 </head>
 <body class="text-gray-300 font-sans min-h-screen flex flex-col items-center py-10 px-4">
 
-<header class="w-full max-w-4xl mb-10 flex justify-between items-center">
+<header class="w-full max-w-5xl mb-10 flex justify-between items-center">
     <div>
-        <h1 class="text-3xl font-bold text-white tracking-tight">REN's Dashboard</h1>
+        <h1 class="text-4xl font-bold text-white tracking-tight">REN's Dashboard</h1>
         <p class="text-sm text-gray-500 mt-1">Daily Tools & Favorites</p>
     </div>
     <div class="text-right">
@@ -52,132 +53,85 @@
     </div>
 </header>
 
-<main class="w-full max-w-4xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+<main class="w-full max-w-5xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
 
-    <!-- Premier League を一番上に配置 -->
-    <a href="https://www.google.com/search?q=%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%AA%E3%83%BC%E3%82%B0" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 group">
-        <div class="flex items-center justify-between mb-4">
-            <div class="w-12 h-12 bg-indigo-900/30 rounded-lg flex items-center justify-center text-indigo-400 group-hover:text-indigo-300">
-                <i class="fa-solid fa-futbol text-xl"></i>
-            </div>
-            <i class="fa-solid fa-arrow-up-right-from-square text-gray-600 group-hover:text-white transition-colors"></i>
+    <!-- カードテンプレート -->
+    <!-- 例：Premier League -->
+    <a href="https://www.google.com/search?q=Premier+League" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 aspect-square flex flex-col items-center justify-center text-center hover:bg-gray-800 group">
+        <div class="w-14 h-14 rounded-full bg-indigo-900/30 flex items-center justify-center text-indigo-400 group-hover:text-indigo-300 mb-3">
+            <i class="fa-solid fa-futbol text-2xl"></i>
         </div>
-        <h2 class="text-xl font-bold text-white mb-1">Premier League</h2>
+        <h2 class="text-lg font-bold text-white">Premier League</h2>
         <p class="text-sm text-gray-500">Scores & Schedule</p>
     </a>
 
     <!-- ChatGPT -->
-    <a href="https://chat.openai.com/" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 group">
-        <div class="flex items-center justify-between mb-4">
-            <div class="w-12 h-12 bg-green-900/30 rounded-lg flex items-center justify-center text-green-400 group-hover:text-green-300">
-                <i class="fa-solid fa-robot text-xl"></i>
-            </div>
-            <i class="fa-solid fa-arrow-up-right-from-square text-gray-600 group-hover:text-white transition-colors"></i>
+    <a href="https://chat.openai.com/" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 aspect-square flex flex-col items-center justify-center text-center hover:bg-gray-800 group">
+        <div class="w-14 h-14 rounded-full bg-green-900/30 flex items-center justify-center text-green-400 group-hover:text-green-300 mb-3">
+            <i class="fa-solid fa-robot text-2xl"></i>
         </div>
-        <h2 class="text-xl font-bold text-white mb-1">ChatGPT</h2>
-        <p class="text-sm text-gray-500">AI Assistant</p>
+        <h2 class="text-lg font-bold text-white">ChatGPT</h2>
+        <p class="text-sm text-gray-500">Smart Assistant</p>
     </a>
 
     <!-- YouTube -->
-    <a href="https://www.youtube.com/" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 group">
-        <div class="flex items-center justify-between mb-4">
-            <div class="w-12 h-12 bg-red-900/30 rounded-lg flex items-center justify-center text-red-500 group-hover:text-red-400">
-                <i class="fa-brands fa-youtube text-xl"></i>
-            </div>
-            <i class="fa-solid fa-arrow-up-right-from-square text-gray-600 group-hover:text-white transition-colors"></i>
+    <a href="https://www.youtube.com/" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 aspect-square flex flex-col items-center justify-center text-center hover:bg-gray-800 group">
+        <div class="w-14 h-14 rounded-full bg-red-900/30 flex items-center justify-center text-red-400 group-hover:text-red-300 mb-3">
+            <i class="fa-brands fa-youtube text-2xl"></i>
         </div>
-        <h2 class="text-xl font-bold text-white mb-1">YouTube</h2>
-        <p class="text-sm text-gray-500">Video & Music</p>
+        <h2 class="text-lg font-bold text-white">YouTube</h2>
+        <p class="text-sm text-gray-500">Entertainment</p>
     </a>
 
     <!-- GitHub -->
-    <a href="https://github.com/" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 group">
-        <div class="flex items-center justify-between mb-4">
-            <div class="w-12 h-12 bg-gray-700/30 rounded-lg flex items-center justify-center text-white group-hover:text-gray-200">
-                <i class="fa-brands fa-github text-xl"></i>
-            </div>
-            <i class="fa-solid fa-arrow-up-right-from-square text-gray-600 group-hover:text-white transition-colors"></i>
+    <a href="https://github.com/" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 aspect-square flex flex-col items-center justify-center text-center hover:bg-gray-800 group">
+        <div class="w-14 h-14 rounded-full bg-gray-700/30 flex items-center justify-center text-white group-hover:text-gray-300 mb-3">
+            <i class="fa-brands fa-github text-2xl"></i>
         </div>
-        <h2 class="text-xl font-bold text-white mb-1">GitHub</h2>
-        <p class="text-sm text-gray-500">Code Repository</p>
+        <h2 class="text-lg font-bold text-white">GitHub</h2>
+        <p class="text-sm text-gray-500">Code Workspace</p>
     </a>
 
     <!-- Gmail -->
-    <a href="https://mail.google.com/" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 group">
-        <div class="flex items-center justify-between mb-4">
-            <div class="w-12 h-12 bg-blue-900/30 rounded-lg flex items中心 justify-center text-blue-400 group-hover:text-blue-300">
-                <i class="fa-solid fa-envelope text-xl"></i>
-            </div>
-            <i class="fa-solid fa-arrow-up-right-from-square text-gray-600 group-hover:text-white transition-colors"></i>
+    <a href="https://mail.google.com/" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 aspect-square flex flex-col items-center justify-center text-center hover:bg-gray-800 group">
+        <div class="w-14 h-14 rounded-full bg-blue-900/30 flex items-center justify-center text-blue-400 group-hover:text-blue-300 mb-3">
+            <i class="fa-solid fa-envelope text-2xl"></i>
         </div>
-        <h2 class="text-xl font-bold text-white mb-1">Gmail</h2>
-        <p class="text-sm text-gray-500">Check Inbox</p>
-    </a>
-
-    <!-- X (Twitter) -->
-    <a href="https://twitter.com/" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 group">
-        <div class="flex items-center justify-between mb-4">
-            <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center text-white">
-                <i class="fa-brands fa-x-twitter text-xl"></i>
-            </div>
-            <i class="fa-solid fa-arrow-up-right-from-square text-gray-600 group-hover:text-white transition-colors"></i>
-        </div>
-        <h2 class="text-xl font-bold text-white mb-1">X</h2>
-        <p class="text-sm text-gray-500">Social Media</p>
-    </a>
-
-    <!-- Google -->
-    <a href="https://www.google.com/" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 group">
-        <div class="flex items-center justify-between mb-4">
-            <div class="w-12 h-12 bg-yellow-900/30 rounded-lg flex items-center justify-center text-yellow-400 group-hover:text-yellow-300">
-                <i class="fa-brands fa-google text-xl"></i>
-            </div>
-            <i class="fa-solid fa-arrow-up-right-from-square text-gray-600 group-hover:text-white transition-colors"></i>
-        </div>
-        <h2 class="text-xl font-bold text-white mb-1">Google</h2>
-        <p class="text-sm text-gray-500">Search</p>
-    </a>
-
-    <!-- TimeTree -->
-    <a href="https://timetreeapp.com/calendars/dScMtU7aNrSc" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 group">
-        <div class="flex items-center justify-between mb-4">
-            <div class="w-12 h-12 bg-teal-900/30 rounded-lg flex items-center justify-center text-teal-400 group-hover:text-teal-300">
-                <i class="fa-solid fa-calendar-days text-xl"></i>
-            </div>
-            <i class="fa-solid fa-arrow-up-right-from-square text-gray-600 group-hover:text-white transition-colors"></i>
-        </div>
-        <h2 class="text-xl font-bold text-white mb-1">TimeTree</h2>
-        <p class="text-sm text-gray-500">Shared Calendar</p>
+        <h2 class="text-lg font-bold text-white">Gmail</h2>
+        <p class="text-sm text-gray-500">Quick Email</p>
     </a>
 
     <!-- Amazon -->
-    <a href="https://www.amazon.co.jp/" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 group">
-        <div class="flex items-center justify-between mb-4">
-            <div class="w-12 h-12 bg-amber-900/30 rounded-lg flex items-center justify-center text-amber-400 group-hover:text-amber-300">
-                <i class="fa-brands fa-amazon text-xl"></i>
-            </div>
-            <i class="fa-solid fa-arrow-up-right-from-square text-gray-600 group-hover:text-white transition-colors"></i>
+    <a href="https://www.amazon.co.jp/" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 aspect-square flex flex-col items-center justify-center text-center hover:bg-gray-800 group">
+        <div class="w-14 h-14 rounded-full bg-amber-900/30 flex items-center justify-center text-amber-400 group-hover:text-amber-300 mb-3">
+            <i class="fa-brands fa-amazon text-2xl"></i>
         </div>
-        <h2 class="text-xl font-bold text-white mb-1">Amazon</h2>
+        <h2 class="text-lg font-bold text-white">Amazon</h2>
         <p class="text-sm text-gray-500">Shopping</p>
     </a>
 
-    <!-- Stopwatch -->
-    <a href="https://stopwatch.onl.jp/" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:bg-gray-800 group">
-        <div class="flex items-center justify-between mb-4">
-            <div class="w-12 h-12 bg-orange-900/30 rounded-lg flex items-center justify-center text-orange-400 group-hover:text-orange-300">
-                <i class="fa-solid fa-stopwatch text-xl"></i>
-            </div>
-            <i class="fa-solid fa-arrow-up-right-from-square text-gray-600 group-hover:text-white transition-colors"></i>
+    <!-- TimeTree -->
+    <a href="https://timetreeapp.com/calendars/dScMtU7aNrSc" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 aspect-square flex flex-col items-center justify-center text-center hover:bg-gray-800 group">
+        <div class="w-14 h-14 rounded-full bg-teal-900/30 flex items-center justify-center text-teal-400 group-hover:text-teal-300 mb-3">
+            <i class="fa-solid fa-calendar-days text-2xl"></i>
         </div>
-        <h2 class="text-xl font-bold text-white mb-1">Stopwatch</h2>
+        <h2 class="text-lg font-bold text-white">TimeTree</h2>
+        <p class="text-sm text-gray-500">Shared Calendar</p>
+    </a>
+
+    <!-- Stopwatch -->
+    <a href="https://stopwatch.onl.jp/" target="_blank" class="link-card block bg-gray-900 border border-gray-800 rounded-xl p-6 aspect-square flex flex-col items-center justify-center text-center hover:bg-gray-800 group">
+        <div class="w-14 h-14 rounded-full bg-orange-900/30 flex items-center justify-center text-orange-400 group-hover:text-orange-300 mb-3">
+            <i class="fa-solid fa-stopwatch text-2xl"></i>
+        </div>
+        <h2 class="text-lg font-bold text-white">Stopwatch</h2>
         <p class="text-sm text-gray-500">Timer Tool</p>
     </a>
 
 </main>
 
 <footer class="mt-20 text-gray-600 text-sm">
-    &copy; 2024 Rennya Watanabe Portfolio
+    &copy; 2025 Rennya Watanabe Portfolio
 </footer>
 
 </body>
